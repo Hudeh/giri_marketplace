@@ -5,13 +5,13 @@ The Giri Artisan Marketplace API is a backend service for an artisan marketplace
 
 ## Features
 
-     Artisan Management: Create, update, retrieve, and delete artisans.
-     Product Management: Handle products with support for filtering, sorting, and search.
-     Order Management: Create and view customer orders with automatic inventory updates.
-     Recommendations: Suggest popular products based on order history.
-     Pagination: Support for paginated responses on list endpoints.
-     Basic Authentication: Secure access to API endpoints.
-     Admin Interface: Manage artisans, products, and orders using Django Admin.
+- Artisan Management: Create, update, retrieve, and delete artisans.
+- Product Management: Handle products with support for filtering, sorting, and search.
+- Order Management: Create and view customer orders with automatic inventory updates.
+- Recommendations: Suggest popular products based on order history.
+- Pagination: Support for paginated responses on list endpoints.
+- Basic Authentication: Secure access to API endpoints.
+- Admin Interface: Manage artisans, products, and orders using Django Admin.
 
 ## Getting Started
 
@@ -24,57 +24,55 @@ The Giri Artisan Marketplace API is a backend service for an artisan marketplace
 
 1. **Clone the repository:**
 
-        ```bash
-        git clone https://github.com/Hudehtech/HotelProxi-PMS-BE.git
-        cd HotelProxi-PMS-BE
-        ```
+    ```bash
+            git clone https://github.com/Hudeh/giri_marketplace.git
+            cd giri_marketplace
+    ```
 
 2. **Create a virtual environment (optional but recommended):**
 
-        ```bash
+    ```bash
         virtualenv venv
-        ```
+    ```
 
 3. **Activate the virtual environment:**
 
     - **Windows**
 
-            ```bash
-            venv\Scripts\activate
-            ```
+    ```bash
+        venv\Scripts\activate
+    ```
 
     - **Linux/macOS**
 
-            ```bash
-            source venv/bin/activate
-            ```
+    ```bash
+        source venv/bin/activate
+    ```
 
 4. **Install dependencies:**
 
-        ```bash
+```bash
         pip install -r requirements.txt
-        ```
+```
 
 ### Database Setup
 
 1. **Run migrations to set up the database:**
 
-        ```bash
-        python manage.py makemigrations
-        python manage.py migrate
-        ```
+```bash
+    python manage.py makemigrations
+    python manage.py migrate
+```
 
 ### Running the Server
 
-    Start the development server:
-
-    ```bash
-    python manage.py runserver
-    ```
+```bash
+python manage.py runserver
+```
 
 ## API Documentation
 
-    Authentication
+- Authentication
     All endpoints require basic authentication. Use your Django superuser credentials or create additional users in the admin interface.
 
 ## Endpoints
